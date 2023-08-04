@@ -4,6 +4,7 @@ import CartView from "../Component Home/CartView";
 import Hero from "../Component Home/HeroSection";
 import Banner from "../Component Home/Banner";
 import Product from "../Component Home/Product";
+import QuickView from "../Component Home/QuickView";
 
 const Home = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -17,6 +18,7 @@ const Home = () => {
       <Hero isopen={isopen} />
       <Banner isopen={isopen} />
       <Product isopen={isopen} />
+      <QuickView />
     </>
   );
 };

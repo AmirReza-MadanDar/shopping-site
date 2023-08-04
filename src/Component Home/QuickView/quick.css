@@ -1,0 +1,44 @@
+/* quick.css */
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(94, 255, 0);
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.slide-item {
+  width: 435px; /* تنظیم عرض اسلایدر */
+  height: 635px;
+  background-color: pink;
+}
+
+.image-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: yellow;
+  width: 70px;
+  height: 310px;
+}
+
+.image-list img {
+  width: 80px;
+  height: 60px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.slide-item img {
+  width: 300px; /* تنظیم حداکثر عرض تصاویر اسلایدر */
+  height: 300px;
+  object-fit: contain;
+}
