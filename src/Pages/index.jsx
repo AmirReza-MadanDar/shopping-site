@@ -5,6 +5,7 @@ import Hero from "../Component Home/HeroSection";
 import Banner from "../Component Home/Banner";
 import Product from "../Component Home/Product";
 import QuickView from "../Component Home/QuickView";
+import Footer from "../Component Home/Footer";
 
 const Home = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const Home = () => {
       <Banner isopen={isopen} />
       <QuickView show={show} toggel2={toggel2} />
       <Product isopen={isopen} toggel2={toggel2} />
+      <Footer />
     </>
   );
 };
