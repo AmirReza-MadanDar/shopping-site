@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 import {
   NavIcones,
   NavMenu,
@@ -16,12 +17,35 @@ import {
 import { MdOutlineSearch } from "react-icons/md";
 import { IoMdCart, IoMdHeartEmpty } from "react-icons/io";
 const Navbar = ({ toggel, isopen }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const toggelHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
-      <NavbarSection isopen={isopen}>
+      <NavbarSection isopen={isopen} scrollNav={scrollNav}>
         <NavbarContainer>
           <NavCol1>
-            <NavbarLogo to="/">Reset TM</NavbarLogo>
+            <NavbarLogo
+              delay={0}
+              spy={true}
+              smooth={true}
+              onClick={toggelHome}
+              to="/"
+            >
+              Reset TM
+            </NavbarLogo>
             <NavMenu>
               <NavLink to="/">Home</NavLink>
               <NavLink to="/shop">Shop</NavLink>

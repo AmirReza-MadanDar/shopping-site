@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+
 export const NavbarSection = styled.nav`
   width: 100%;
   height: 70px;
@@ -7,10 +8,13 @@ export const NavbarSection = styled.nav`
   align-items: center;
   justify-content: center;
   position: fixed;
-  /* opacity: ${({ isopen }) => (isopen ? "0.7" : "1")}; */
+  opacity: ${({ isopen }) => (isopen ? "0.7" : "1")};
   transition: all 0.3s ease-in-out;
-  /* background-color: ${({ isopen }) =>
-    isopen ? "rgba(0,0,0,0.6);" : "transparent"}; */
+  background-color: red;
+  background-color: ${({ scrollNav }) =>
+    scrollNav ? "#FAFAFA" : "transparent"};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 1px 3px 0 rgba(0, 0, 0, 0.1)" : "none"};
   z-index: 200;
 `;
 export const NavbarContainer = styled.div`
@@ -52,7 +56,7 @@ export const NavIcones = styled.div`
 export const NavLink = styled(Link)`
   font-size: 18px;
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 400;
   color: #494949;
   transition: all 0.3s ease-in-out;
 

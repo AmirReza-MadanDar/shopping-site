@@ -7,7 +7,7 @@ export const CartViewSection = styled.aside`
   position: fixed;
   right: ${({ isopen }) => (isopen ? "0" : "-100%")};
   transition: all 0.3s ease-in-out;
-  z-index: 1100;
+  z-index: 11000000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
