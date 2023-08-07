@@ -38,7 +38,7 @@ const sliders = ({ isopen }) => {
   };
   return (
     <>
-      <Div>
+      <Div id="hero">
         <Slider {...settings}>
           <Item>
             <ImagContainer>

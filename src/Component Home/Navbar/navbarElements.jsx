@@ -40,6 +40,7 @@ export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0;
 `;
 export const NavIcones = styled.div`
   width: 150px;
@@ -77,6 +78,7 @@ export const CartContainer = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
+  margin-bottom: 0px;
 `;
 export const IconeCart = styled.div`
   font-size: 32px;
@@ -95,9 +97,9 @@ export const Span = styled.span`
   position: absolute;
   font-weight: bold;
   top: 3px;
-  right: 227px;
+  right: 219px;
   width: 18px;
-  height: 18px;
+  height: 27px;
   text-align: center;
   background-color: #717fe0;
 `;
@@ -107,9 +109,9 @@ export const Span2 = styled.span`
   position: absolute;
   font-weight: bold;
   top: 3px;
-  right: 169px;
+  right: 162px;
   width: 18px;
-  height: 18px;
+  height: 27px;
   text-align: center;
   background-color: #717fe0;
 `;

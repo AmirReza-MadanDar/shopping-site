@@ -11,14 +11,19 @@ const Home = () => {
   const toggel = () => {
     SetIsOpen(!isopen);
   };
+  const [show, SetShow] = useState(false);
+  const toggel2 = () => {
+    SetShow(!show);
+    console.log("yes");
+  };
   return (
     <>
       <Navbar toggel={toggel} isopen={isopen} />
       <CartView toggel={toggel} isopen={isopen} />
       <Hero isopen={isopen} />
       <Banner isopen={isopen} />
-      <Product isopen={isopen} />
-      <QuickView />
+      <QuickView show={show} toggel2={toggel2} />
+      <Product isopen={isopen} toggel2={toggel2} />
     </>
   );
 };

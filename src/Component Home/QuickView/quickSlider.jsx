@@ -10,6 +10,7 @@ const CenterMode = ({ images }) => {
 
   const settings = {
     dots: false,
+    fade: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -21,7 +22,7 @@ const CenterMode = ({ images }) => {
 
   const handleThumbnailClick = (index) => {
     setCurrentSlide(index);
-    sliderRef.current.slickGoTo(index); // تغییر اسلایدر با کلیک بر روی تصاویر کوچک
+    sliderRef.current.slickGoTo(index);
   };
 
   return (

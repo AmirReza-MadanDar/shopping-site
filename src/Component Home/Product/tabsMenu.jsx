@@ -131,7 +131,7 @@ const products = [
   },
 ];
 
-const TabMenu = ({ isopen }) => {
+const TabMenu = ({ isopen, toggel2 }) => {
   const [selectedProductId, setSelectedProductId] = useState(null);
   const initialRandomProducts = products
     .slice()
@@ -167,7 +167,7 @@ const TabMenu = ({ isopen }) => {
                       src={`../../images/${product.img}`}
                       alt={product.name}
                     />
-                    <button>Quick View</button>
+                    <button onClick={toggel2}>Quick View</button>
                   </div>
                   <div className="cart-text">
                     <Link to={"/shop"}>{product.name}</Link>

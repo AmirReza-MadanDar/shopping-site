@@ -1,9 +1,6 @@
-/* quick.css */
-
 .slider-container {
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(94, 255, 0);
 }
 
 .slider-wrapper {
@@ -14,31 +11,56 @@
 }
 
 .slide-item {
-  width: 435px; /* تنظیم عرض اسلایدر */
-  height: 635px;
-  background-color: pink;
+  width: 435px;
+  height: 100%;
 }
 
 .image-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-
-  background-color: yellow;
+  margin-top: 60px;
   width: 70px;
   height: 310px;
 }
 
 .image-list img {
-  width: 80px;
-  height: 60px;
-  margin: 10px 0;
+  width: 70px;
+  height: 85px;
   cursor: pointer;
 }
 
 .slide-item img {
-  width: 300px; /* تنظیم حداکثر عرض تصاویر اسلایدر */
-  height: 300px;
-  object-fit: contain;
+  width: 435px;
+  height: 575px;
+  margin-top: 60px;
+  transition: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #ffffff;
+  padding: 10px;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.slick-prev,
+.slick-next {
+  z-index: 1000000;
+  margin-left: 25px;
+  margin-right: 49px;
+}
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
 }

@@ -1,19 +1,20 @@
-.slick-prev:before,
-.slick-next:before {
-  color: #666666;
-  font-size: 24px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
+#hero .slick-prev:before,
+#hero .slick-next:before {
+  color: #666666 !important;
+  font-size: 24px !important;
+  transition: all 0.3s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-in-out !important;
+  -moz-transition: all 0.3s ease-in-out !important;
+  -ms-transition: all 0.3s ease-in-out !important;
+  -o-transition: all 0.3s ease-in-out !important;
+  background-color: transparent;
 }
-.slick-prev,
-.slick-next {
-  margin-left: -30px;
-  margin-right: -30px;
+#hero .slick-prev,
+#hero .slick-next {
+  margin-left: -30px !important;
+  margin-right: -30px !important;
 }
-.slick-prev:hover:before,
-.slick-next:hover:before {
-  color: #717fe0;
+#hero .slick-prev:hover:before,
+#hero .slick-next:hover:before {
+  color: #717fe0 !important;
 }
