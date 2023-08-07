@@ -25,7 +25,7 @@ const Home = () => {
       <Banner isopen={isopen} />
       <QuickView show={show} toggel2={toggel2} />
       <Product isopen={isopen} toggel2={toggel2} />
-      <Footer />
+      <Footer isopen={isopen} />
     </>
   );
 };
