@@ -7,12 +7,13 @@ export const NavbarSection = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+  top: 0;
   position: fixed;
   opacity: ${({ isopen }) => (isopen ? "0.7" : "1")};
   transition: all 0.3s ease-in-out;
-  background-color: red;
+  background-color: transparent;
   background-color: ${({ scrollNav }) =>
-    scrollNav ? "#FAFAFA" : "transparent"};
+    scrollNav ? "#FAFAFA" : "tranparent"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 3px 0 rgba(0, 0, 0, 0.1)" : "none"};
   z-index: 200;

@@ -7,14 +7,13 @@ export const ProductSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 235px;
 `;
 export const ProductContainer = styled.div`
   width: 100%;
   max-width: 1170px;
   height: auto;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;

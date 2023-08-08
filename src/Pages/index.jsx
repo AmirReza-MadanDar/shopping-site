@@ -15,7 +15,6 @@ const Home = () => {
   const [show, SetShow] = useState(false);
   const toggel2 = () => {
     SetShow(!show);
-    console.log("yes");
   };
   return (
     <>
