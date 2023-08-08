@@ -4,6 +4,7 @@ import Home from "./Pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Shop from "./Pages/shop";
 import ScrollToTop from "./Scroll";
+import Cart from "./Pages/cart";
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </>

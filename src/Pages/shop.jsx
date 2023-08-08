@@ -26,10 +26,7 @@ const Shop = ({ location }) => {
   const toggel = () => {
     SetIsOpen(!isopen);
   };
-  const [show, SetShow] = useState(false);
-  const toggel2 = () => {
-    SetShow(!show);
-  };
+
   return (
     <>
       <ScrollToTop />
