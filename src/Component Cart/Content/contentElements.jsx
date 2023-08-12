@@ -16,6 +16,7 @@ export const ContentContainer = styled.div`
   max-width: 1170px;
   display: flex;
   justify-content: space-between;
+  padding-right: 48px;
 `;
 export const TabaleContainer = styled.div`
   width: 680px;
