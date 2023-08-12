@@ -9,7 +9,7 @@ import ScrollToTop from "../Scroll";
 
 const Shop = ({ location }) => {
   const [showQuickView, setShowQuickView] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+  const [isActive] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
