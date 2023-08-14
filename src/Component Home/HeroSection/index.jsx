@@ -2,12 +2,12 @@ import React from "react";
 import { HeroContainer, HeroSection } from "./heroElements";
 import Sliders from "./sliders";
 
-const Hero = ({ isopen }) => {
+const Hero = () => {
   return (
     <>
-      <HeroSection isopen={isopen}>
+      <HeroSection>
         <HeroContainer>
-          <Sliders isopen={isopen} />
+          <Sliders />
         </HeroContainer>
       </HeroSection>
     </>

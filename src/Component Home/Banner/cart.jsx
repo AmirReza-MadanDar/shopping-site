@@ -10,10 +10,10 @@ import {
   CartTextWrapper,
 } from "./cartElements";
 
-const Cart = ({ nameText, collction, img, isopen }) => {
+const Cart = ({ nameText, collction, img }) => {
   return (
     <>
-      <CartContainer to={"/shop"} isopen={isopen}>
+      <CartContainer to={"/shop"}>
         <CartTextContainer>
           <CartTextWrapper>
             <CartNameText>{nameText}</CartNameText>
@@ -22,7 +22,7 @@ const Cart = ({ nameText, collction, img, isopen }) => {
           <CartButton to={"/shop"}>shop Now</CartButton>
         </CartTextContainer>
         <CartImageContainer>
-          <CartImage isopen={isopen} src={img}></CartImage>
+          <CartImage src={img}></CartImage>
         </CartImageContainer>
       </CartContainer>
     </>

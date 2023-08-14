@@ -17,8 +17,8 @@ const Cart = () => {
       <ScrollToTop />
       <Navbar toggel={toggel} isopen={isopen} />
       <CartView toggel={toggel} isopen={isopen} />
-      <ContentCart isopen={isopen} />
-      <Footer isopen={isopen} />
+      <ContentCart />
+      <Footer />
     </>
   );
 };

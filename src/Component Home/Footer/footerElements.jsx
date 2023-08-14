@@ -3,8 +3,7 @@ export const FooterSection = styled.section`
   width: 100%;
   height: 470px;
   transition: all 0.3s ease-in-out;
-  background-color: ${({ isopen }) =>
-    isopen ? "rgba(0,0,0,0.6);" : "#222222"};
+  background-color: #222222;
   display: flex;
   justify-content: center;
 `;
@@ -35,7 +34,7 @@ export const FooterColContainer = styled.div`
 export const FooterTextTittel = styled.h4`
   font-size: 18px;
   transition: all 0.3s ease-in-out;
-  color: ${({ isopen }) => (isopen ? "#cbcbcb" : "#fff")};
+  color: #fff;
   margin-bottom: 32px;
 `;
 export const FooterTextItem = styled.p`

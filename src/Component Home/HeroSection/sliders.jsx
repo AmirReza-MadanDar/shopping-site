@@ -21,7 +21,7 @@ import {
   TextWrapper,
 } from "./slidersElements";
 
-const sliders = ({ isopen }) => {
+const sliders = () => {
   const settings = {
     dots: true,
     fade: true,
@@ -42,43 +42,37 @@ const sliders = ({ isopen }) => {
         <Slider {...settings}>
           <Item>
             <ImagContainer>
-              <Image isopen={isopen} src={img2} alt="" />
+              <Image src={img2} alt="" />
             </ImagContainer>
             <TextContainer>
               <TextWrapper>
                 <TextTittel>Men New-Season</TextTittel>
                 <Product>JACKETS & COATS</Product>
-                <ButtonLink isopen={isopen} to={"/shop"}>
-                  SHOP NOW
-                </ButtonLink>
+                <ButtonLink to={"/shop"}>SHOP NOW</ButtonLink>
               </TextWrapper>
             </TextContainer>
           </Item>
           <Item>
             <ImagContainer>
-              <Image2 isopen={isopen} src={img3} alt="" />
+              <Image2 src={img3} alt="" />
             </ImagContainer>
             <TextContainer>
               <TextWrapper>
                 <TextTittel>Woman Collection 2023</TextTittel>
                 <Product>NEW SEASON</Product>
-                <ButtonLink isopen={isopen} to={"/shop"}>
-                  SHOP NOW
-                </ButtonLink>
+                <ButtonLink to={"/shop"}>SHOP NOW</ButtonLink>
               </TextWrapper>
             </TextContainer>
           </Item>
           <Item>
             <ImagContainer>
-              <Image3 isopen={isopen} src={img4} alt="" />
+              <Image3 src={img4} alt="" />
             </ImagContainer>
             <TextContainer>
               <TextWrapper>
                 <TextTittel>Men Collection 2023</TextTittel>
                 <Product>NEW ARRIVALS</Product>
-                <ButtonLink isopen={isopen} to={"/shop"}>
-                  SHOP NOW
-                </ButtonLink>
+                <ButtonLink to={"/shop"}>SHOP NOW</ButtonLink>
               </TextWrapper>
             </TextContainer>
           </Item>

@@ -7,16 +7,16 @@ import {
 } from "./productElements";
 import TabMenu from "./tabsMenu";
 
-const Product = ({ isopen, toggel2 }) => {
+const Product = ({ toggel2 }) => {
   const location = useLocation();
-  const isActive = location.pathname !== "/shop"; // دریافت وضعیت فعلی مسیر (آیا مسیر /shop فعال است یا خیر)
+  const isActive = location.pathname !== "/shop";
 
   return (
     <>
-      <ProductSection isopen={isopen}>
+      <ProductSection>
         <ProductContainer>
           {isActive && <ProductText>PRODUCT OVERVIEW</ProductText>}
-          <TabMenu isopen={isopen} toggel2={toggel2} />
+          <TabMenu toggel2={toggel2} />
         </ProductContainer>
       </ProductSection>
     </>

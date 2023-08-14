@@ -19,21 +19,18 @@ export const Image = styled.img`
   height: 790px;
   margin-top: -70px !important;
   margin-left: -80px;
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
   transition: all 0.3s ease-in-out;
 `;
 export const Image2 = styled.img`
   height: 800px;
   margin-top: -30px !important;
   margin-left: -100px !important;
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
   transition: all 0.3s ease-in-out;
 `;
 export const Image3 = styled.img`
   height: 710px;
   margin-top: -10px !important;
   margin-left: -15px;
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
   transition: all 0.3s ease-in-out;
 `;
 export const TextContainer = styled.div`
@@ -73,6 +70,5 @@ export const ButtonLink = styled(Link)`
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
   transition: all 0.3s ease-in-out;
 `;

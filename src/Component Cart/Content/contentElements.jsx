@@ -8,7 +8,7 @@ export const ContentSection = styled.section`
   justify-content: center;
   user-select: none;
   transition: all 0.3s ease-in-out;
-  background-color: ${({ isopen }) => (isopen ? "rgba(0,0,0,0.6)" : "#fff")};
+  background-color: #fff;
 `;
 export const ContentContainer = styled.div`
   width: 100%;
@@ -73,7 +73,6 @@ export const ProductImg = styled.img`
   width: 60px;
   height: 85px;
   transition: all 0.3s ease-in-out;
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
 `;
 export const ProductText = styled.p`
   color: #555555;
@@ -143,9 +142,7 @@ export const ChoseIcone = styled.div`
 export const Chose2 = styled.div`
   width: 47px;
   height: 45px;
-  transition: all 0.3s ease-in-out;
-  background-color: ${({ isopen }) => (isopen ? "rgba(0,0,0,0.6)" : "#f7f7f7")};
-  opacity: ${({ isopen }) => (isopen ? "0.1" : "1")};
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -174,9 +171,7 @@ export const ButtonInput = styled.input`
   font-size: 14px;
   font-weight: 400;
   padding-left: 16px;
-  transition: all 0.3s ease-in-out;
-  background-color: ${({ isopen }) => (isopen ? "rgba(0,0,0,0.6)" : "#fff")};
-  opacity: ${({ isopen }) => (isopen ? "0.1" : "1")};
+  background-color: #fff;
 `;
 export const ButtonTeble = styled.button`
   width: 163px;
@@ -186,8 +181,7 @@ export const ButtonTeble = styled.button`
   border-radius: 22px;
   color: #333;
   transition: all 0.3s ease-in-out;
-  background-color: ${({ isopen }) => (isopen ? "rgba(0,0,0,0.6)" : "#fff")};
-  opacity: ${({ isopen }) => (isopen ? "0.1" : "1")};
+  background-color: #fff;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 

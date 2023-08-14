@@ -16,7 +16,7 @@ import {
 } from "./navbarElements";
 import { MdOutlineSearch } from "react-icons/md";
 import { IoMdCart, IoMdHeartEmpty } from "react-icons/io";
-const Navbar = ({ toggel, isopen }) => {
+const Navbar = ({ toggel }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -34,7 +34,7 @@ const Navbar = ({ toggel, isopen }) => {
   };
   return (
     <>
-      <NavbarSection isopen={isopen} scrollNav={scrollNav}>
+      <NavbarSection scrollNav={scrollNav}>
         <NavbarContainer>
           <NavCol1>
             <NavbarLogo

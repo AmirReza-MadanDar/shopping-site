@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 export const CartViewSection = styled.aside`
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 11000000;
+
+  transition: all 0.3 ease-in-out;
+  right: ${({ isopen }) => (isopen ? "0" : "-100%")};
+  background-color: ${({ isopen }) => (isopen ? "rgba(0,0,0,0.6);" : "#none")};
+`;
+export const CartContainer = styled.div`
   width: 405px;
   height: 100vh;
   background-color: #fff;
   position: fixed;
+  right: 0;
+  opacity: 1;
   right: ${({ isopen }) => (isopen ? "0" : "-100%")};
   transition: all 0.3s ease-in-out;
   z-index: 11000000;

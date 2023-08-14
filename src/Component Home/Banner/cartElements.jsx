@@ -11,8 +11,6 @@ export const CartContainer = styled(Link)`
   &:hover {
     background-color: rgba(103, 117, 214, 0.8);
   }
-  border: ${({ isopen }) =>
-    isopen ? "1px solid #545353" : "1px solid #e6e6e6"};
 `;
 export const CartTextContainer = styled.div`
   width: 50%;
@@ -81,5 +79,4 @@ export const CartImage = styled.img`
   ${CartContainer}:hover & {
     filter: brightness(30%);
   }
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
 `;

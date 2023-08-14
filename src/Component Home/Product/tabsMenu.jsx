@@ -12,7 +12,6 @@ const Img = styled.img`
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  filter: ${({ isopen }) => (isopen ? "brightness(30%)" : "none")};
 `;
 const categories = ["All Products", "Women", "Men", "Bag", "Shoes", "Watches"];
 
@@ -131,7 +130,7 @@ const products = [
   },
 ];
 
-const TabMenu = ({ isopen, toggel2 }) => {
+const TabMenu = ({ toggel2 }) => {
   const [selectedProductId, setSelectedProductId] = useState(null);
   const initialRandomProducts = products
     .slice()
@@ -163,7 +162,6 @@ const TabMenu = ({ isopen, toggel2 }) => {
                 >
                   <div className="product-img">
                     <Img
-                      isopen={isopen}
                       src={`../../images/${product.img}`}
                       alt={product.name}
                     />

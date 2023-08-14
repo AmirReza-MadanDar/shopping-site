@@ -25,28 +25,28 @@ import {
   FaCcPaypal,
   FaCcVisa,
 } from "react-icons/fa";
-const Footer = ({ isopen }) => {
+const Footer = () => {
   return (
     <>
-      <FooterSection isopen={isopen}>
+      <FooterSection>
         <FooterContainer>
           <FooterTextContainer>
             <FooterColContainer>
-              <FooterTextTittel isopen={isopen}>CATEGORIES</FooterTextTittel>
+              <FooterTextTittel>CATEGORIES</FooterTextTittel>
               <FooterTextItem>Women</FooterTextItem>
               <FooterTextItem>Men</FooterTextItem>
               <FooterTextItem>Shoes</FooterTextItem>
               <FooterTextItem>Watches</FooterTextItem>
             </FooterColContainer>
             <FooterColContainer>
-              <FooterTextTittel isopen={isopen}>HELP</FooterTextTittel>
+              <FooterTextTittel>HELP</FooterTextTittel>
               <FooterTextItem>Track Order</FooterTextItem>
               <FooterTextItem>Returns</FooterTextItem>
               <FooterTextItem>Shipping</FooterTextItem>
               <FooterTextItem>FAQs</FooterTextItem>
             </FooterColContainer>
             <FooterColContainer>
-              <FooterTextTittel isopen={isopen}>GET IN TOUCH</FooterTextTittel>
+              <FooterTextTittel>GET IN TOUCH</FooterTextTittel>
               <FooterAddres>
                 Any questions? Let us know in store at 8th floor, 379 Hudson St,
                 New York, NY 10018 or call us on (+1) 96 716 6879
@@ -64,7 +64,7 @@ const Footer = ({ isopen }) => {
               </IconsContainer>
             </FooterColContainer>
             <FooterInputColContainer>
-              <FooterTextTittel isopen={isopen}>NEWSLETTER</FooterTextTittel>
+              <FooterTextTittel>NEWSLETTER</FooterTextTittel>
               <FooterInput
                 placeholder="email@example.com
 "

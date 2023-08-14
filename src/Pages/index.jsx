@@ -20,11 +20,11 @@ const Home = () => {
     <>
       <Navbar toggel={toggel} isopen={isopen} />
       <CartView toggel={toggel} isopen={isopen} />
-      <Hero isopen={isopen} />
-      <Banner isopen={isopen} />
+      <Hero />
+      <Banner />
       <QuickView show={show} toggel2={toggel2} />
-      <Product isopen={isopen} toggel2={toggel2} />
-      <Footer isopen={isopen} />
+      <Product toggel2={toggel2} />
+      <Footer />
     </>
   );
 };

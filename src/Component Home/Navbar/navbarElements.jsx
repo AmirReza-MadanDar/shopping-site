@@ -9,7 +9,6 @@ export const NavbarSection = styled.nav`
   justify-content: center;
   top: 0;
   position: fixed;
-  opacity: ${({ isopen }) => (isopen ? "0.7" : "1")};
   transition: all 0.3s ease-in-out;
   background-color: transparent;
   background-color: ${({ scrollNav }) =>

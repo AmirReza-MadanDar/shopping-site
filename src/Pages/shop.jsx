@@ -33,8 +33,8 @@ const Shop = ({ location }) => {
       <Navbar toggel={toggel} isopen={isopen} />
       <CartView toggel={toggel} isopen={isopen} />
       <QuickView show={showQuickView} toggel2={toggleQuickView} />
-      <Product isopen={isopen} toggel2={toggleQuickView} isActive={isActive} />
-      <Footer isopen={isopen} />
+      <Product toggel2={toggleQuickView} isActive={isActive} />
+      <Footer />
     </>
   );
 };

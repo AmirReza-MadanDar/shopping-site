@@ -82,9 +82,9 @@ const ContentCart = ({ isopen }) => {
   };
   return (
     <>
-      <ContentSection isopen={isopen}>
+      <ContentSection>
         <ContentContainer>
-          <TabaleContainer isopen={isopen}>
+          <TabaleContainer>
             <TableTextWrapper>
               <TableTittel1>
                 <TextTittel>PRODUCT </TextTittel>

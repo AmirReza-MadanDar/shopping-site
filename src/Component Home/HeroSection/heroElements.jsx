@@ -4,8 +4,7 @@ export const HeroSection = styled.section`
   height: 100vh;
   background-color: #e9eae3;
   transition: all 0.3s ease-in-out;
-  background-color: ${({ isopen }) =>
-    isopen ? "rgba(0,0,0,0.6);" : "#e9eae3"};
+  background-color: #e9eae3;
   display: flex;
   justify-content: center;
 `;
