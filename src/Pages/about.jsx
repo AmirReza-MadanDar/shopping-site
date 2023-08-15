@@ -3,6 +3,7 @@ import ScrollToTop from "../Scroll";
 import Navbar from "../Component Home/Navbar";
 import CartView from "../Component Home/CartView";
 import Footer from "../Component Home/Footer";
+import AboutContent from "../Componnet About";
 
 const About = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -14,6 +15,7 @@ const About = () => {
       <ScrollToTop />
       <Navbar toggel={toggel} isopen={isopen} />
       <CartView toggel={toggel} isopen={isopen} />
+      <AboutContent />
       <Footer />
     </>
   );
