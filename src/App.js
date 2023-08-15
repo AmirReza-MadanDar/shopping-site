@@ -7,6 +7,7 @@ import ScrollToTop from "./Scroll";
 import Cart from "./Pages/cart";
 import Blog from "./Pages/blog";
 import About from "./Pages/about";
+import Contact from "./Pages/contact";
 
 const App = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </>
