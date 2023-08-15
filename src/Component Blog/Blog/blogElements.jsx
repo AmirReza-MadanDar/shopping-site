@@ -183,6 +183,11 @@ export const ProText = styled.a`
   color: #555;
   text-decoration: none;
   width: 109px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #717fe0;
+  }
 `;
 export const ProPrize = styled.p`
   color: #888;
@@ -243,4 +248,11 @@ export const TagsItem = styled.p`
   height: 30px;
   margin-right: 8px;
   padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #717fe0;
+    border: 1px solid #717fe0;
+  }
 `;

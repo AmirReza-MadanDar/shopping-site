@@ -11,6 +11,11 @@ export const BlogCartImage = styled.div`
   width: 100%;
   height: 415px;
   display: flex;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.03);
+  }
 `;
 export const BlogTextDate = styled.div`
   width: 70px;
