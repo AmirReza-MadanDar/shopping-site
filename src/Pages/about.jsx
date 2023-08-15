@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import ScrollToTop from "../Scroll";
 import Navbar from "../Component Home/Navbar";
 import CartView from "../Component Home/CartView";
 import Footer from "../Component Home/Footer";
 import AboutContent from "../Componnet About";
+import ScrollToTop from "../Component Scoroll/Scroll";
 
 const About = () => {
   const [isopen, SetIsOpen] = useState(false);

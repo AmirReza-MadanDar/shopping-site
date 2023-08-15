@@ -6,6 +6,7 @@ import Banner from "../Component Home/Banner";
 import Product from "../Component Home/Product";
 import QuickView from "../Component Home/QuickView";
 import Footer from "../Component Home/Footer";
+import ScrollToTop from "../Component Scoroll/Scroll";
 
 const Home = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
   };
   return (
     <>
+      <ScrollToTop />
       <Navbar toggel={toggel} isopen={isopen} />
       <CartView toggel={toggel} isopen={isopen} />
       <Hero />

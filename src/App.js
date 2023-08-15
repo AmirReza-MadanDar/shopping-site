@@ -3,11 +3,11 @@ import "./App.css";
 import Home from "./Pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Shop from "./Pages/shop";
-import ScrollToTop from "./Scroll";
 import Cart from "./Pages/cart";
 import Blog from "./Pages/blog";
 import About from "./Pages/about";
 import Contact from "./Pages/contact";
+import ScrollToTop from "./Component Scoroll/Scroll";
 
 const App = () => {
   useEffect(() => {

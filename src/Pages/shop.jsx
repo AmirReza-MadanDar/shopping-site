@@ -4,8 +4,7 @@ import Product from "../Component Home/Product";
 import CartView from "../Component Home/CartView";
 import QuickView from "../Component Home/QuickView";
 import Footer from "../Component Home/Footer";
-
-import ScrollToTop from "../Scroll";
+import ScrollToTop from "../Component Scoroll/Scroll";
 
 const Shop = ({ location }) => {
   const [showQuickView, setShowQuickView] = useState(false);

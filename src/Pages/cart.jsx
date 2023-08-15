@@ -3,8 +3,9 @@ import Navbar from "../Component Home/Navbar";
 
 import Footer from "../Component Home/Footer";
 import CartView from "../Component Home/CartView";
-import ScrollToTop from "../Scroll";
+
 import ContentCart from "../Component Cart/Content/indx";
+import ScrollToTop from "../Component Scoroll/Scroll";
 
 const Cart = () => {
   const [isopen, SetIsOpen] = useState(false);
