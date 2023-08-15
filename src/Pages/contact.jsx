@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import ScrollToTop from "../Scroll";
+import Navbar from "../Component Home/Navbar";
+import CartView from "../Component Home/CartView";
+import Footer from "../Component Home/Footer";
 
 const Contact = () => {
+  const [isopen, SetIsOpen] = useState(false);
+  const toggel = () => {
+    SetIsOpen(!isopen);
+  };
   return (
     <>
-      <h1>Contact</h1>
+      <ScrollToTop />
+      <Navbar toggel={toggel} isopen={isopen} />
+      <CartView toggel={toggel} isopen={isopen} />
+      <Footer />
     </>
   );
 };
