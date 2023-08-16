@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { useLocation } from "react-router-dom";
 import {
   NavIcones,
   NavMenu,
@@ -16,8 +17,12 @@ import {
 } from "./navbarElements";
 import { MdOutlineSearch } from "react-icons/md";
 import { IoMdCart, IoMdHeartEmpty } from "react-icons/io";
+
 const Navbar = ({ toggel }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const [activeItem, setActiveItem] = useState("");
+  const location = useLocation();
+
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);
@@ -25,56 +30,114 @@ const Navbar = ({ toggel }) => {
       setScrollNav(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    return () => {
+      window.removeEventListener("scroll", changeNav);
+    };
   }, []);
 
-  const toggelHome = () => {
-    scroll.scrollToTop();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setActiveItem("home");
+    } else if (location.pathname === "/shop") {
+      setActiveItem("shop");
+    } else if (location.pathname === "/cart") {
+      setActiveItem("cart");
+    } else if (location.pathname === "/blog") {
+      setActiveItem("blog");
+    } else if (location.pathname === "/about") {
+      setActiveItem("about");
+    } else if (location.pathname === "/contact") {
+      setActiveItem("contact");
+    }
+  }, [location]);
+
+  const handleClick = (item) => {
+    setActiveItem(item);
+    if (item === "home") {
+      scroll.scrollToTop();
+    }
   };
+
   return (
-    <>
-      <NavbarSection scrollNav={scrollNav}>
-        <NavbarContainer>
-          <NavCol1>
-            <NavbarLogo
-              delay={0}
-              spy={true}
-              smooth={true}
-              onClick={toggelHome}
+    <NavbarSection scrollNav={scrollNav}>
+      <NavbarContainer>
+        <NavCol1>
+          <NavbarLogo
+            delay={0}
+            spy={true}
+            smooth={true}
+            onClick={() => handleClick("home")}
+            to="/"
+          >
+            Reset TM
+          </NavbarLogo>
+          <NavMenu>
+            <NavLink
+              onClick={() => handleClick("home")}
+              className={activeItem === "home" ? "active" : ""}
               to="/"
             >
-              Reset TM
-            </NavbarLogo>
-            <NavMenu>
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/shop">Shop</NavLink>
-              <NavLink to="/cart">Cart</NavLink>
-              <NavLink to="/blog">Blog</NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/contact">Contact</NavLink>
-            </NavMenu>
-          </NavCol1>
-          <NavIcones>
-            <IconeSearch>
-              <MdOutlineSearch />
-            </IconeSearch>
-            <CartContainer>
-              <IconeCart onClick={toggel}>
-                <IoMdCart />
-                <Span>2</Span>
-              </IconeCart>
-            </CartContainer>
-            <CartContainer>
-              <IconeCart>
-                <IoMdHeartEmpty />
-                <Span2>0</Span2>
-              </IconeCart>
-            </CartContainer>
-          </NavIcones>
-        </NavbarContainer>
-      </NavbarSection>
-    </>
+              Home
+            </NavLink>
+            <NavLink
+              onClick={() => handleClick("shop")}
+              className={activeItem === "shop" ? "active" : ""}
+              to="/shop"
+            >
+              Shop
+            </NavLink>
+            <NavLink
+              onClick={() => handleClick("cart")}
+              className={activeItem === "cart" ? "active" : ""}
+              to="/cart"
+            >
+              Cart
+            </NavLink>
+            <NavLink
+              onClick={() => handleClick("blog")}
+              className={activeItem === "blog" ? "active" : ""}
+              to="/blog"
+            >
+              Blog
+            </NavLink>
+            <NavLink
+              onClick={() => handleClick("about")}
+              className={activeItem === "about" ? "active" : ""}
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              onClick={() => handleClick("contact")}
+              className={activeItem === "contact" ? "active" : ""}
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+          </NavMenu>
+        </NavCol1>
+        <NavIcones>
+          <IconeSearch>
+            <MdOutlineSearch />
+          </IconeSearch>
+          <CartContainer>
+            <IconeCart onClick={toggel}>
+              <IoMdCart />
+              <Span>2</Span>
+            </IconeCart>
+          </CartContainer>
+          <CartContainer>
+            <IconeCart>
+              <IoMdHeartEmpty />
+              <Span2>0</Span2>
+            </IconeCart>
+          </CartContainer>
+        </NavIcones>
+      </NavbarContainer>
+    </NavbarSection>
   );
 };
 

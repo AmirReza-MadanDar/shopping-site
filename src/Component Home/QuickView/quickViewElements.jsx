@@ -5,7 +5,7 @@ export const QuickViewSection = styled.section`
   user-select: none;
   position: fixed;
   overflow: auto;
-  z-index: 1000000;
+  z-index: 10000000000000000;
   bottom: 0;
   display: flex;
   transition: all 0.3s ease-in-out;

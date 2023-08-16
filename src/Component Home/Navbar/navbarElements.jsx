@@ -58,8 +58,8 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: 400;
   color: #494949;
-  transition: all 0.3s ease-in-out;
 
+  transition: color 0.3s ease-in-out;
   &.active {
     color: #717fe0;
   }
