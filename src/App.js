@@ -8,6 +8,7 @@ import Blog from "./Pages/blog";
 import About from "./Pages/about";
 import Contact from "./Pages/contact";
 import ScrollToTop from "./Component Scoroll/Scroll";
+import Page404 from "./Pages/notFound";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </>
