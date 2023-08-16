@@ -7,6 +7,7 @@ import Product from "../Component Home/Product";
 import QuickView from "../Component Home/QuickView";
 import Footer from "../Component Home/Footer";
 import ScrollToTop from "../Component Scoroll/Scroll";
+import BouttonIndex from "../Component Home/Button";
 
 const Home = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -27,6 +28,7 @@ const Home = () => {
       <QuickView show={show} toggel2={toggel2} />
       <Product toggel2={toggel2} />
       <Footer />
+      <BouttonIndex />
     </>
   );
 };

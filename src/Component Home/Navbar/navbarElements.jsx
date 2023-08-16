@@ -15,7 +15,7 @@ export const NavbarSection = styled.nav`
     scrollNav ? "#FAFAFA" : "tranparent"};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 1px 3px 0 rgba(0, 0, 0, 0.1)" : "none"};
-  z-index: 200;
+  z-index: 200000000;
 `;
 export const NavbarContainer = styled.div`
   width: 100%;

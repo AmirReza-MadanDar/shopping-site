@@ -5,6 +5,7 @@ import CartView from "../Component Home/CartView";
 import QuickView from "../Component Home/QuickView";
 import Footer from "../Component Home/Footer";
 import ScrollToTop from "../Component Scoroll/Scroll";
+import BouttonIndex from "../Component Home/Button";
 
 const Shop = ({ location }) => {
   const [showQuickView, setShowQuickView] = useState(false);
@@ -34,6 +35,7 @@ const Shop = ({ location }) => {
       <QuickView show={showQuickView} toggel2={toggleQuickView} />
       <Product toggel2={toggleQuickView} isActive={isActive} />
       <Footer />
+      <BouttonIndex />
     </>
   );
 };

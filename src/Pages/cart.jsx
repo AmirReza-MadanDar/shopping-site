@@ -6,6 +6,7 @@ import CartView from "../Component Home/CartView";
 
 import ContentCart from "../Component Cart/Content/indx";
 import ScrollToTop from "../Component Scoroll/Scroll";
+import BouttonIndex from "../Component Home/Button";
 
 const Cart = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Cart = () => {
       <CartView toggel={toggel} isopen={isopen} />
       <ContentCart />
       <Footer />
+      <BouttonIndex />
     </>
   );
 };

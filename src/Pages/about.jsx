@@ -4,6 +4,7 @@ import CartView from "../Component Home/CartView";
 import Footer from "../Component Home/Footer";
 import AboutContent from "../Componnet About";
 import ScrollToTop from "../Component Scoroll/Scroll";
+import BouttonIndex from "../Component Home/Button";
 
 const About = () => {
   const [isopen, SetIsOpen] = useState(false);
@@ -17,6 +18,7 @@ const About = () => {
       <CartView toggel={toggel} isopen={isopen} />
       <AboutContent />
       <Footer />
+      <BouttonIndex />
     </>
   );
 };
