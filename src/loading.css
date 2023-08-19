@@ -1,0 +1,26 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading img {
+  width: 200px;
+  height: 200px;
+}
+.page-content.loading .content {
+  display: none;
+}
+
+.page-content.loading .content {
+  display: block;
+}
+
+.page-content.loading .loading {
+  display: flex;
+}
+
+.page-content.loading .loader {
+  display: none;
+}
