@@ -9,7 +9,6 @@ import About from "./Pages/about";
 import Contact from "./Pages/contact";
 import Page404 from "./Pages/notFound";
 import "./App.css";
-import "./loading.css";
 import loading from "./images/15.gif";
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
